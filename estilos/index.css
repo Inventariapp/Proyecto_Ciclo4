@@ -1,0 +1,326 @@
+/*parte principal*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:crimson;
+}
+.estilo_titulo{
+
+    font-size: 35px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/*footer*/
+.caja_logo{
+    width: 50%; 
+    height: 140px; 
+    float: left; 
+    position: relative;
+
+    
+}
+
+div img{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caja_titulo{
+    background-color: lightsteelblue;
+    width: 50%; 
+    height: 140px; 
+    float: left; 
+    background-color: white;
+    position: relative;
+}
+
+div h1{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/*estilos del main*/
+#formulario{
+    background-color:white;
+    color:black;
+    margin-left: 30%;
+    width: 40%;
+    margin-right: 30%;
+}
+#formulario_titulo{
+    color:black;
+    text-align: center;
+}
+
+label{
+    display:inline-block;
+    width: 30%;
+ 
+}
+
+input, select{
+    width: 60%;
+}
+
+.boton_formulario{
+    width: 49%;
+    height: 35px;
+    background-color: white;
+    border-color: orangered;
+    color:black;
+}
+
+.boton_formulario:hover{
+    color: orangered;
+}
+
+
+/*menu*/
+nav{
+    text-align: center;
+
+}
+
+li{
+    display:inline-block;
+    width: 15%;
+    height: 35px;
+    background-color: orangered;
+    padding-top: 10px;   
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+li a:hover{
+    color:dodgerblue;
+}
+
+/*tabla*/
+table{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #000;
+}
+
+th, td{
+    border: 1px solid #000;
+}
+/*fin tabla*/
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 220px;
+    /*background-color: cadetblue;*/
+}
+.caja1{
+    width: 33%;
+    height: 220px;
+    /*background-color: crimson;*/
+    float: left;border: 1px solid #000;
+}
+.caja2{
+    width: 33%;
+    height: 220px;
+    /*background-color:darkcyan;*/
+    float: left;
+    border: 1px solid #000;
+}
+.caja3{
+    width: 33%;
+    height: 220px;
+    /*background-color:deepskyblue;*/
+    float: left;
+    border: 1px solid #000;
+}
+
+.caja_superior{
+    width: 100%;
+    height: 60px;
+    /*background-color: cornflowerblue;*/
+    
+}
+
+.caja_superior1{
+    width: 80%;
+    height: 60px;
+    /*background-color: orange;*/
+    float: left;
+    position: relative;
+}
+
+.caja_superior1 h3{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+
+.caja_superior2{
+    width: 20%;
+    height: 60px;
+    /*background-color: yellow;*/
+    float: left;
+    position: relative;
+}
+
+.caja_superior2 span{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+span{
+    color:dodgerblue;
+    font-size:30px !important;
+}
+
+.caja_media{
+    width: 100%;
+    height: 120px;
+    /*background-color:cornflowerblue;*/
+}
+
+.caja_media1{
+    width: 45%;
+    height: 120px;
+    /*background-color:aqua;*/
+    float: left;
+    margin-left: 5%;
+}
+.caja_media2{
+    width: 45%;
+    height: 120px;
+    /*background-color:greenyellow;*/
+    float: left;
+}
+.caja_inferior{
+    width: 100%;
+    height: 40px;
+    background-color:white;
+    position: relative;
+}
+
+.caja_inferior input{
+    position: absolute;
+    left: 85%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.estilo_boton{
+    width: 30%;
+    height: 30px;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+/*fin footer*/
+
+/* responsive web designe*/
+/* moviles vertical*/
+@media screen and (max-width: 640px){
+    .caja_logo{
+        width: 100%; 
+        height: 140px; 
+        float: none; 
+    }
+    div img{
+        left: 50%;
+    }
+    .caja_titulo{
+        width: 100%; 
+        height: 140px; 
+        float: none; 
+
+    }
+    
+    div h1{
+        left: 50%;
+        top: 30%;
+
+    }
+    
+    li{
+        display:inline-block;
+        
+        width: 100%;
+        height: 35px;
+        padding-top: 10px;   
+        margin-bottom: 10px;
+    }
+
+    nav{
+        margin-left: -10%;
+    }
+
+    /*inicio formulario*/
+    #formulario{
+        margin-left: 1%;
+        width: 99%;
+        margin-right: 1%;
+    }
+
+    label{
+        display:inline-block;
+        width: 95%;
+     
+    }
+    
+    input, select{
+        width: 95%;
+    }
+    
+    .boton_formulario{
+        width: 99%;
+        margin-bottom: 10px;
+    }
+
+    /*fin formulario*/
+
+    /*inicio footer*/
+
+    .caja1, .caja2, .caja3{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+
+    /*fin footer*/
+
+       
+}
+
+/* moviles horizontal*/
+@media screen and (min-width: 641px) and (max-width:1000px){
+
+    #formulario{
+        margin-left: 5%;
+        width: 90%;
+        margin-right: 5%;
+    }
+    .caja_superior1 h3{
+        left: 40%;
+    }
+    
+
+}
